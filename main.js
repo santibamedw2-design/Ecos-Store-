@@ -1,15 +1,15 @@
 // Datos de los productos
 const products = {
     servicios: [
-        { id: 's1', name: 'Reportaje Especial', price: 5000, desc: 'Cobertura a profundidad de tu evento o tema.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_services_1771962697776.png' },
-        { id: 's2', name: 'Videograma', price: 3000, desc: 'Video dinámico y adaptado para redes sociales.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_services_1771962697776.png' },
-        { id: 's3', name: 'Infografía Dinámica', price: 1500, desc: 'Datos y estadísticas explicados de forma visual.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_services_1771962697776.png' },
-        { id: 's4', name: 'Banner Publicitario', price: 2500, desc: 'Publicidad en el portal ecosmediamx.com por 1 mes.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_services_1771962697776.png' }
+        { id: 's1', name: 'Reportaje Especial', price: 5000, desc: 'Cobertura a profundidad de tu evento o tema.', img: 'img/servicios.png' },
+        { id: 's2', name: 'Videograma', price: 3000, desc: 'Video dinámico y adaptado para redes sociales.', img: 'img/servicios.png' },
+        { id: 's3', name: 'Infografía Dinámica', price: 1500, desc: 'Datos y estadísticas explicados de forma visual.', img: 'img/servicios.png' },
+        { id: 's4', name: 'Banner Publicitario', price: 2500, desc: 'Publicidad en el portal ecosmediamx.com por 1 mes.', img: 'img/servicios.png' }
     ],
     tienda: [
-        { id: 't1', name: 'Playera Ecos', price: 350, desc: 'Playera oficial, edición Marcela Lecuona.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_shirt_1771962640322.png' },
-        { id: 't2', name: 'Pin Coleccionable', price: 100, desc: 'Pin metálico con el logo del medio.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_pin_1771962681545.png' },
-        { id: 't3', name: 'Termo / Botella', price: 400, desc: 'Mantiene tus bebidas calientes o frías.', img: 'file:///C:/Users/utric/.gemini/antigravity/brain/48d3896a-fe1c-4e48-8304-3686bc6e6041/ecosmedia_thermos_1771962664410.png' }
+        { id: 't1', name: 'Playera Ecos', price: 350, desc: 'Playera oficial, edición Marcela Lecuona.', img: 'img/playera.png' },
+        { id: 't2', name: 'Pin Coleccionable', price: 100, desc: 'Pin metálico con el logo del medio.', img: 'img/pin.png' },
+        { id: 't3', name: 'Termo / Botella', price: 400, desc: 'Mantiene tus bebidas calientes o frías.', img: 'img/termo.png' }
     ]
 };
 
