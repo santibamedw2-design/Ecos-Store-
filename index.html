@@ -4,348 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecos Media - Influencer Marketing</title>
+    <title>Ecos Media Store Prototipo</title>
     <link rel="icon" type="image/png" href="logo_ecosmedia.png">
-    <meta name="description"
-        content="Automatiza el flujo de trabajo con creadores de contenido, desde búsqueda hasta el ROI.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="influencers.css"> <!-- Combined Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navbar (Recycled from Ecos Media Store but adapted for this landing) -->
-    <nav class="navbar glass-nav">
+    <nav class="navbar">
         <div class="container nav-content">
             <a href="https://ecosmediamx.com" class="logo-link">
-                <img src="https://drive.google.com/uc?export=view&id=1D-sNog9RVTjYTfPun8XGJn1W8VUB_T8E"
-                    alt="Ecos Media Logo" style="height: 40px; width: auto;" onerror="this.src='logo_ecosmedia.png'">
+                <img src="logo_ecosmedia.png" alt="Ecos Media Logo" style="height: 40px; width: auto;">
             </a>
             <ul class="nav-links">
-                <li><a href="#descubrimiento">Descubrimiento</a></li>
-                <li><a href="#campanas">Campañas</a></li>
-                <li><a href="#contenido">Contenido UGC</a></li>
-                <li><a href="#analisis">Análisis & ROI</a></li>
-                <li><a href="#afiliados">Afiliados</a></li>
+                <li><a href="#">Reportajes</a></li>
+                <li><a href="#">Videogramas</a></li>
+                <li><a href="#">Infografías</a></li>
+                <li><a href="#">Tienda</a></li>
             </ul>
-            <div class="nav-actions">
-                <a href="#" class="btn-primary small-btn">Prueba Gratis</a>
+            <div class="cart-icon" id="cart-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-count" id="cart-count">0</span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero animated-hero">
-        <div class="blob-bg"></div>
-        <div class="container hero-container">
-            <div class="hero-text">
-                <span class="badge">Ecos Media For Brands</span>
-                <h1 class="gradient-text">Impulsa tu Marca con Creadores de Contenido Auténticos</h1>
-                <p>Automatiza el flujo de trabajo de marketing de influencers: desde la búsqueda basada en IA y
-                    contratación, hasta el seguimiento de envíos, pagos y la medición exacta del ROI.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Empieza Ahora</a>
-                    <a href="#" class="btn-secondary">Ver Demostración</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <!-- Abstract visual representation of influencer network -->
-                <div class="glass-card main-dashboard-mockup">
-                    <div class="mockup-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="mockup-body">
-                        <div class="pulse-network">
-                            <div class="node center">You</div>
-                            <div class="node n1"><img src="https://i.pravatar.cc/150?img=1" alt="Creator"></div>
-                            <div class="node n2"><img src="https://i.pravatar.cc/150?img=2" alt="Creator"></div>
-                            <div class="node n3"><img src="https://i.pravatar.cc/150?img=3" alt="Creator"></div>
-                            <div class="node n4"><img src="https://i.pravatar.cc/150?img=4" alt="Creator"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header class="hero">
+        <div class="container">
+            <h2>Impulsa tu comunicación</h2>
+            <p>Contrata nuestros servicios profesionales o adquiere merchandising oficial de nuestros comunicadores.</p>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <main>
-        <!-- 1. Descubrimiento de Influencers -->
-        <section id="descubrimiento" class="feature-section left-align">
-            <div class="container feature-grid">
-                <div class="feature-content">
-                    <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                    </div>
-                    <h2>Descubrimiento Inteligente</h2>
-                    <p>Encuentra a tus creadores ideales en segundos. Nuestra inteligencia artificial analiza millones
-                        de perfiles buscando palabras clave específicas, hashtags virales y menciones relevantes para tu
-                        nicho.</p>
-                    <ul class="feature-list">
-                        <li>Filtros avanzados por audiencia y demografía.</li>
-                        <li>Análisis de autenticidad de seguidores.</li>
-                        <li>Recomendaciones basadas en IA.</li>
-                    </ul>
-                </div>
-                <div class="feature-visual tilt-in">
-                    <div class="glass-panel search-panel">
-                        <div class="search-bar">
-                            <span>🔍 #ModaSustentable</span>
-                        </div>
-                        <div class="creator-list">
-                            <div class="creator-item skeleton-pop">
-                                <img src="https://i.pravatar.cc/150?img=5" alt="U">
-                                <div>
-                                    <h4>@saramoda</h4>
-                                    <span>245K Seguidores • 4.5% Engagement</span>
-                                </div>
-                                <button class="btn-micro">Invitar</button>
-                            </div>
-                            <div class="creator-item skeleton-pop delay-1">
-                                <img src="https://i.pravatar.cc/150?img=9" alt="U">
-                                <div>
-                                    <h4>@estiloverde</h4>
-                                    <span>120K Seguidores • 6.2% Engagement</span>
-                                </div>
-                                <button class="btn-micro">Invitar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main class="container">
+        <section class="tabs">
+            <button class="tab-btn active" data-tab="servicios">Servicios Ecos Media</button>
+            <button class="tab-btn" data-tab="tienda">Tienda de Comunicadores</button>
         </section>
 
-        <!-- 2. Gestión de Campañas -->
-        <section id="campanas" class="feature-section right-align dark-section">
-            <div class="container feature-grid">
-                <div class="feature-visual slide-up">
-                    <div class="glass-panel kanban-panel">
-                        <div class="kanban-col">
-                            <h5>Contactados</h5>
-                            <div class="k-card">Negociación...</div>
-                        </div>
-                        <div class="kanban-col">
-                            <h5>Producto Enviado</h5>
-                            <div class="k-card transit">En tránsito 📦</div>
-                        </div>
-                        <div class="kanban-col">
-                            <h5>Contenido Listo</h5>
-                            <div class="k-card check">Aprobado ✅</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                    </div>
-                    <h2>Gestión de Campañas Sin Fricción</h2>
-                    <p>Olvídate del desorden en tu bandeja de entrada. Centraliza la comunicación automatizada, gestiona
-                        la firma de contratos digitales y coordina el envío de productos desde un solo panel.</p>
-                    <ul class="feature-list">
-                        <li>Plantillas de email automatizadas.</li>
-                        <li>Contratos digitales integrados (eSignature).</li>
-                        <li>Seguimiento logístico de productos sembrados.</li>
-                    </ul>
-                </div>
-            </div>
+        <section id="servicios" class="products-grid active-tab">
+            <!-- Renderizado por JS -->
         </section>
 
-        <!-- 3. Biblioteca de Contenido -->
-        <section id="contenido" class="feature-section left-align">
-            <div class="container feature-grid">
-                <div class="feature-content">
-                    <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                            <polyline points="21 15 16 10 5 21"></polyline>
-                        </svg>
-                    </div>
-                    <h2>Biblioteca de Contenido UGC</h2>
-                    <p>Todo el contenido generado por tus creadores, descargado automáticamente en alta calidad.
-                        Almacena y organiza cientos de fotos y videos listos para ser reutilizados en tus propios
-                        canales y anuncios pagados.</p>
-                    <a href="#" class="text-link">Descubre cómo potenciar tus Ads con UGC &rarr;</a>
-                </div>
-                <div class="feature-visual masonry-grid">
-                    <div class="m-item m1 bg-img"></div>
-                    <div class="m-item m2 bg-img"></div>
-                    <div class="m-item m3 bg-img"></div>
-                    <div class="m-item m4 bg-img"></div>
-                    <div class="m-overlay-play">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Análisis y ROI -->
-        <section id="analisis" class="feature-section center-align bg-gradient">
-            <div class="container">
-                <div class="feature-content text-center max-w-800">
-                    <div class="icon-wrap mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="20" x2="18" y2="10"></line>
-                            <line x1="12" y1="20" x2="12" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="14"></line>
-                        </svg>
-                    </div>
-                    <h2>Mide el Impacto Real (ROI)</h2>
-                    <p>Deja de adivinar el rendimiento. Rastrea métricas vitales como impresiones, clics, conversiones y
-                        ventas reales generadas por cada creador. Comprende el valor monetario exacto de tu inversión.
-                    </p>
-                </div>
-                <div class="stats-cards">
-                    <div class="stat-card float-anim">
-                        <div class="stat-label">ROI Promedio</div>
-                        <div class="stat-value text-green">+345%</div>
-                        <div class="stat-chart">
-                            <div class="bar" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="stat-card float-anim delay-1">
-                        <div class="stat-label">Ventas Atribuidas</div>
-                        <div class="stat-value">$124,500 <span class="currency">MXN</span></div>
-                        <div class="stat-chart">
-                            <div class="bar" style="width: 65%"></div>
-                        </div>
-                    </div>
-                    <div class="stat-card float-anim delay-2">
-                        <div class="stat-label">CPE (Costo por Eng.)</div>
-                        <div class="stat-value">$0.45 <span class="currency">MXN</span></div>
-                        <div class="stat-chart">
-                            <div class="bar" style="width: 30%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Gestión de Afiliados -->
-        <section id="afiliados" class="feature-section left-align">
-            <div class="container feature-grid">
-                <div class="feature-visual code-gen">
-                    <div class="glass-panel">
-                        <h4>Generador de Enlaces</h4>
-                        <div class="input-group">
-                            <label>Creador</label>
-                            <div class="fake-input">@saramoda</div>
-                        </div>
-                        <div class="input-group">
-                            <label>Descuento</label>
-                            <div class="fake-input">15% OFF</div>
-                        </div>
-                        <div class="output-code">ecosmediamx.com/saramoda15 <button class="copy-btn">Copiar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                        </svg>
-                    </div>
-                    <h2>Programas de Afiliados Automatizados</h2>
-                    <p>Convierte a tus mejores influencers en embajadores a largo plazo. Crea masivamente enlaces
-                        personalizados y códigos de descuento exclusivos para rastrear conversiones y pagar comisiones
-                        automáticamente.</p>
-                    <ul class="feature-list">
-                        <li>Tracking a prueba de balas vía Pixels & Cookies.</li>
-                        <li>Cálculo automático de comisiones por niveles.</li>
-                        <li>Pagos integrados a creadores en un clic.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Final -->
-        <section class="final-cta text-center">
-            <div class="container">
-                <h2>Diseñado para el Crecimiento DTC</h2>
-                <p>Únete a las marcas de comercio electrónico que están construyendo relaciones auténticas y rentables a
-                    escala.</p>
-                <a href="#" class="btn-primary large-btn">Agenda un Demo Personalizado</a>
-            </div>
+        <section id="tienda" class="products-grid">
+            <!-- Renderizado por JS -->
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="https://drive.google.com/uc?export=view&id=1D-sNog9RVTjYTfPun8XGJn1W8VUB_T8E"
-                        alt="Ecos Media Logo" style="height: 30px; filter: grayscale(1) brightness(2);"
-                        onerror="this.src='logo_ecosmedia.png'">
-                    <p>Conectando marcas DTC con voces auténticas.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Plataforma</h4>
-                    <a href="#">Búsqueda</a>
-                    <a href="#">Campañas</a>
-                    <a href="#">Reportes</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Empresa</h4>
-                    <a href="#">Sobre Nosotros</a>
-                    <a href="#">Casos de Éxito</a>
-                    <a href="#">Contacto</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2026 Ecos Media. Todos los derechos reservados.
-            </div>
+    <!-- Carrito Flotante -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button id="close-cart" class="close-btn">&times;</button>
         </div>
-    </footer>
+        <div class="cart-items" id="cart-items">
+            <!-- Items del carrito -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00 MXN</span>
+            </div>
+            <button class="checkout-btn">Proceder al pago</button>
+        </div>
+    </div>
 
-    <script>
-        // Simple interactions for the page elements
-        document.addEventListener('DOMContentLoaded', () => {
-            const copyBtn = document.querySelector('.copy-btn');
-            if (copyBtn) {
-                copyBtn.addEventListener('click', () => {
-                    copyBtn.innerText = 'Copiado!';
-                    copyBtn.classList.add('success');
-                    setTimeout(() => {
-                        copyBtn.innerText = 'Copiar';
-                        copyBtn.classList.remove('success');
-                    }, 2000);
-                });
-            }
+    <div class="cart-overlay" id="cart-overlay"></div>
 
-            // Reveal on scroll animation
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.feature-section').forEach(section => {
-                section.classList.add('hidden');
-                observer.observe(section);
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
